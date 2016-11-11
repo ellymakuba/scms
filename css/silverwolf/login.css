@@ -1,0 +1,89 @@
+/* $Id: login.css 3239 2009-12-16 14:02:18Z tim_schofield $*/
+body {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font: 14px "Lucida Grande", "Arial", "Helvetica", "Verdana", "sans-serif";
+	background: #EEEEFF;
+	
+	color: #777;
+}
+
+#container {
+	text-align: left;
+	margin: 60px auto 0 auto;
+	padding:6px 0 36px 0;
+     /*	position: relative; only makes sense to absolute position a child */
+	z-index: 1000;
+	width: 585px;
+	background: #fff;
+	background-image: url("graduation.jpg");
+	-moz-border-radius: 20px;
+     border-radius: 20px;
+}
+#lower{
+	margin: 30px auto 0 auto;
+}
+#text_field {
+	position:relative;
+	margin: 0 0 0 80px;
+}
+#header {
+
+	margin: auto 0 0 15px;
+}
+#login_logo {
+	width: 200px;
+	height: 51px;
+	margin: 0 0 20px 50px; /* top margin in FF3 is from body but in IE8 is from container */
+	background: #fff url(../webERP.gif); /* -repeat-x left bottom- not needed cause now img equals div */
+}
+
+form {
+	margin: 0; /* IE8 gives default margin to forms, but FF3 doesn't */
+}
+
+select {
+	width: 200px;
+	margin: 4px 0 11px 200px;
+}
+
+input {
+	width: 200px;
+	border: solid #e3e3e3 1px;
+	height: 25px;
+	background: url(images/input_bg.png) repeat-x left top;
+	padding: 4px 0 4px 0;
+	vertical-align: middle;
+	margin: 3px 0 10px 200px;
+}
+
+input:hover {
+	border: solid #aad4e3 1px;
+	background-position: left bottom;
+}
+
+input.button {
+	font-weight: bold;
+	color: #fff;
+	background: url(images/menu_bg.png) 0px -8px repeat-x;
+	border: solid #e3e3e3 1px;
+	padding: 0;
+	margin: 3px 0 10px 200px;
+
+}
+
+input.button:hover {
+	background: url(images/menu_bg_dblue.png) 0px -8px repeat-x; /* works in FF3 but not in IE8 */
+}
+
+label {
+	margin: 0 0 0 150px;
+}
+log {
+	margin: 0 0 0 150px;
+}
+#demo_text {
+	margin: 0 0 0 50px;
+	width: 200px;
+}
